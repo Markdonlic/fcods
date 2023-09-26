@@ -1,0 +1,20 @@
+Register Page
+1 get an account number
+2 validate account number and create login details
+
+validation Page
+1 input account no and choose username
+2 create new password
+3 create a secret answers
+
+login Page
+1 username and password
+2 receive otp
+
+reset password
+1 username/email/acct no
+2 receive otp
+
+recover acct
+1 username/email/acct no
+2 validate secret answers
