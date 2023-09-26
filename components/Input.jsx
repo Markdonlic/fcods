@@ -1,3 +1,7 @@
+export function Selects() {
+  return <div>select</div>;
+}
+
 export default function Input(props) {
   return (
     <input

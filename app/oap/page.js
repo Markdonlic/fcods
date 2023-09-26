@@ -53,19 +53,25 @@ const page = () => {
                 Open A New Account &#8614;
               </button>
             </div>
-            <div className="w-full flex justify-start items-center gap-1">
+            <div className="w-full text-xs flex justify-start flex-wrap items-center gap-1">
               <Link
                 href="/register"
                 className="py-4 px-6 flex text-white bg-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-700 transition-all duration-500"
               >
                 Savings &#8614;
               </Link>
-              <button className="py-4 px-6 flex text-white bg-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-700 transition-all duration-500">
+              <Link
+                href="/register"
+                className="py-4 px-6 flex text-white bg-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-700 transition-all duration-500"
+              >
                 Current &#8614;
-              </button>
-              <button className="py-4 px-6 flex text-white bg-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-700 transition-all duration-500">
+              </Link>
+              <Link
+                href="/register"
+                className="py-4 px-6 flex text-white bg-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-700 transition-all duration-500"
+              >
                 Diaspora &#8614;
-              </button>
+              </Link>
             </div>
           </div>
         </div>

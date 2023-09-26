@@ -25,7 +25,7 @@ const page = () => {
             <Input label="Email Address *" required />
             <Input label="Phone Number *" required />
             <Input label="Date of Birth *" required type="date" />
-            <div className="flex justify-center items-center">
+            <div className="flex justify-end items-center">
               <button className="py-2 px-4 bg-green-500 capitalize font-semibold tracking-wider">
                 submit
               </button>
