@@ -1,4 +1,5 @@
 import Input from "@/components/Input";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -25,10 +26,21 @@ const page = () => {
             <Input label="Email Address *" required />
             <Input label="Phone Number *" required />
             <Input label="Date of Birth *" required type="date" />
-            <div className="flex justify-end items-center">
-              <button className="py-2 px-4 bg-green-500 capitalize font-semibold tracking-wider">
-                submit
-              </button>
+            <div className="flex justify-between items-center">
+              <Link href="/a-home">
+                <button className="py-2 px-4 bg-green-500 capitalize font-semibold tracking-wider">
+                  submit
+                </button>
+              </Link>
+              <div className="flex justify-center items-center gap-1 text-gray-500">
+                <p>Already have account?</p>
+                <Link
+                  href="/login"
+                  className="py-2 px-4 capitalize font-semibold tracking-wider underline underline-offset-4 text-green-600 hover:text-green-500 hover:underline-offset-0 transition-all duration-500"
+                >
+                  Login
+                </Link>
+              </div>
             </div>
           </div>
         </div>

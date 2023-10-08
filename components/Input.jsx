@@ -9,6 +9,8 @@ export default function Input(props) {
       type={props.type}
       placeholder={props.label}
       required={props.required}
+      readOnly={props.readOnly}
+      disabled={props.disabled}
     />
   );
 }

@@ -62,24 +62,22 @@ const page = () => {
             <br />
             {day} {date} {month}, {year}
           </div>
-          <div className="font-bold">
-            <Link href="a-home">Fidelity Bank logo</Link>
-          </div>
+          <div className="font-bold">Fidelity Bank logo</div>
         </div>
         <div className="w-full flex justify-center">
           <div className="w-full py-4 grid sm:grid-cols-2 gap-3">
-            <button className="py-2 px-4 border-[1px] text-sky-600 border-sky-600 capitalize font-semibold tracking-wider">
-              <Link href="/validate-email">Open A New Account</Link>
-            </button>
-            <Input label="username *" required />
-            <Input label="password *" required />
+            <Input label="Account Number" required disabled="true" />
+            <Input label="Question *" required />
+            <Input label="Answer *" required />
             <div className="flex flex-wrap-reverse justify-between items-center">
-              <div className="flex flex-col flex-wrap gap-1 justify-center">
-                <Link href="/validate-account">Reset password ?</Link>
-                <Link href="/validate-account">Recover Account ? </Link>
-              </div>
+              <Link
+                href="/login"
+                className="py-2 px-4 border-[1px] border-red-600 text-red-600 capitalize font-semibold tracking-wider hover:bg-red-100"
+              >
+                Back to Login
+              </Link>
               <button className="py-2 px-4 text-white bg-green-500 capitalize font-semibold tracking-wider">
-                <Link href="/otp">login</Link>
+                <Link href="/reset-password">Submit</Link>
               </button>
             </div>
           </div>
