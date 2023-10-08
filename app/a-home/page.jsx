@@ -82,6 +82,7 @@ const page = () => {
             <div className="pb-4">Oops! You don't have any favourites yet</div>
           </div>
         </div>
+        <div className="h-14 w-full p-4"></div>
       </div>
     </div>
   );
