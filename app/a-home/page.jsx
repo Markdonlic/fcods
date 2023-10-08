@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-3">
       <div className="bg-red-500 w-full fixed top-0 left-0 h-16 flex items-center justify-between text-white px-4 text-3xl">
-        <div className="font-semibold">
+        <div className="font-semibold tracking-normal">
           Good Morning, <span>Joe</span>
         </div>
         <div>
