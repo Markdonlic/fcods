@@ -29,7 +29,7 @@ const page = () => {
     <div className="w-full flex flex-col justify-center items-center gap-3">
       <div className="bg-red-500 w-full fixed top-0 left-0 h-16 flex items-center justify-between text-white px-4 text-3xl">
         <div className="flex justify-center items-center gap-4 tracking-tight text-base">
-          <span>{"<"}</span>Pay Bills
+          <Link href="/a-home">{"<"}</Link>Pay Bills
         </div>
       </div>
       <div className="h-16 w-full p-4"></div>
