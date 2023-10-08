@@ -128,14 +128,14 @@ export default function RootLayout({ children }) {
             </div>
             <div className="fixed bottom-0 left-0 flex h-12 w-full items-center justify-between bg-red-600 text-gray-200 px-6 font-sans text-xs">
               <Link
-                href="#"
+                href="/a-home"
                 className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
               >
                 <AiOutlineBank className="text-xl p-0 m-0" />
                 <p className="p-0 m-0">Home</p>
               </Link>
               <Link
-                href="#"
+                href="/a-home/pay-bills"
                 className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
               >
                 <FaHandHoldingUsd className="text-xl p-0 m-0" />

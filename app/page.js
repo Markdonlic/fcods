@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,9 +22,12 @@ export default function Home() {
         </div>
         <div>Hi! am using m-authentication system</div>
         <div className="flex justify-center items-center">
-          <button className="py-2 bg-orange-500 rounded-full px-4 text-white outline-none hover:bg-transparent hover:text-neutral-900 hover:outline-1 hover:outline-orange-500 transition-all duration-500">
+          <Link
+            href="/login"
+            className="py-2 bg-orange-500 rounded-full px-4 text-white outline-none hover:bg-transparent hover:text-neutral-900 hover:outline-1 hover:outline-orange-500 transition-all duration-500"
+          >
             Log out
-          </button>
+          </Link>
         </div>
       </div>
     </div>
