@@ -1,4 +1,5 @@
 import Alert from "@/components/Alert";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { FaRegCircleUser } from "react-icons/fa6";
 import {
   MdNotificationsActive,
@@ -31,14 +32,24 @@ const page = () => {
           </div>
           <div className="flex w-full justify-between items-center">
             <div className="font-semibold">NGN2,002,023.28</div>
-            <div className="text-xs tracking-normal">Hide Balance</div>
+            <div className="hidden text-xs tracking-normal flex justify-center items-center gap-1">
+              <AiOutlineEyeInvisible className="text-xl" />
+              Show Balance
+            </div>
+            <div className="text-xs tracking-normal flex justify-center items-center gap-1">
+              <AiOutlineEye className="text-xl" />
+              Hide Balance
+            </div>
           </div>
         </div>
 
         <div className="w-[90%] bg-red-600 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
           <div className="flex w-full justify-between items-center">
             <div className="uppercase font-semibold">John Doe</div>
-            <div className="text-xs">Active</div>
+            <div className="text-xs flex justify-center items-center gap-1">
+              <div className="p-1 bg-green-500 rounded-full"></div>
+              <p>Active</p>
+            </div>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="text-gray-200 opacity-70">SAVINGS ACCT</div>
@@ -48,7 +59,14 @@ const page = () => {
             <div className="text-xs py-1 px-3 rounded-xl bg-red-400">
               2236681052
             </div>
-            <div className="text-xs tracking-normal">Hide Balance</div>
+            <div className="text-xs tracking-normal flex justify-center items-center gap-1">
+              <AiOutlineEyeInvisible className="text-xl" />
+              Show Balance
+            </div>
+            <div className="hidden text-xs tracking-normal flex justify-center items-center gap-1">
+              <AiOutlineEye className="text-xl" />
+              Hide Balance
+            </div>
           </div>
         </div>
 
