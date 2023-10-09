@@ -14,7 +14,7 @@ const page = () => {
         </div>
       </div>
       <div className="h-14 w-full p-4"></div>
-      <div className="bg-gray-100 w-full flex flex-col justify-center gap-3">
+      <div className="w-full flex flex-col justify-center gap-3">
         <Providers name="Benin Moov" code="BEMV" link="#" />
         <div className="w-full flex flex-col justify-center px-4">
           <div className="flex flex-col justify-center py-4">
@@ -24,21 +24,16 @@ const page = () => {
               type="text"
               maxLength={14}
               placeholder="Enter Phone Number"
-              className="p-3 bg-gray-200 border-[1px] border-white"
+              className="p-3 bg-gray-200 outline-red-200"
             />
           </div>
 
           <div className="flex flex-col justify-center py-4">
-            <label
-              for="amount"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Select an option
-            </label>
+            <label for="amount">Select an option</label>
             <select
               name="top_up"
               id="amount"
-              class="bg-gray-200 focus:ring-red-500 w-fit p-3 block"
+              class="bg-gray-200 focus:ring-red-200 w-fit p-3 block outline-red-200"
             >
               <option selected value="500">
                 500 XOF Top Up
@@ -56,7 +51,7 @@ const page = () => {
             </select>
           </div>
           <div className="flex justify-center items-center px-6 py-4">
-            <button className="w-full text-base py-3 rounded-full uppercase bg-green-400 text-white">
+            <button className="w-full text-base py-3 rounded-full uppercase bg-red-500 text-white">
               Next
             </button>
           </div>

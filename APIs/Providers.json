@@ -3,396 +3,396 @@
     "id": 1,
     "name": "Benin Moov",
     "code": "BEMV",
-    "link": "a-home/airtime/BEMV"
+    "link": "/BEMV"
   },
   {
     "id": 2,
     "name": "Cameroon Orange",
     "code": "CMOR",
-    "link": "a-home/airtime/CMOR"
+    "link": "/CMOR"
   },
   {
     "id": 3,
     "name": "Canada Bell",
     "code": "CANB",
-    "link": "a-home/airtime/CANB"
+    "link": "/CANB"
   },
   {
     "id": 4,
     "name": "Canada ChatR",
     "code": "CANC",
-    "link": "a-home/airtime/CANC"
+    "link": "/CANC"
   },
   {
     "id": 5,
     "name": "Canada Fido",
     "code": "CANF",
-    "link": "a-home/airtime/CANF"
+    "link": "/CANF"
   },
   {
     "id": 6,
     "name": "Canada Koodo",
     "code": "CANK",
-    "link": "a-home/airtime/CANK"
+    "link": "/CANK"
   },
   {
     "id": 7,
     "name": "Canada MTS",
     "code": "CANM",
-    "link": "a-home/airtime/CANM"
+    "link": "/CANM"
   },
   {
     "id": 8,
     "name": "Canada PublicMobile",
     "code": "CANP",
-    "link": "a-home/airtime/CANP"
+    "link": "/CANP"
   },
   {
     "id": 9,
     "name": "Canada Rogers",
     "code": "CANR",
-    "link": "a-home/airtime/CANR"
+    "link": "/CANR"
   },
   {
     "id": 10,
     "name": "Canada Solo",
     "code": "CANS",
-    "link": "a-home/airtime/CANS"
+    "link": "/CANS"
   },
   {
     "id": 11,
     "name": "Canada Virgin",
     "code": "CANV",
-    "link": "a-home/airtime/CANV"
+    "link": "/CANV"
   },
   {
     "id": 12,
     "name": "Canada Wind",
     "code": "CANW",
-    "link": "a-home/airtime/CANW"
+    "link": "/CANW"
   },
   {
     "id": 13,
     "name": "China Mobile",
     "code": "CHM",
-    "link": "a-home/airtime/CHM"
+    "link": "/CHM"
   },
   {
     "id": 14,
     "name": "China Telecom",
     "code": "CHTE",
-    "link": "a-home/airtime/CHTE"
+    "link": "/CHTE"
   },
   {
     "id": 15,
     "name": "China Unicom",
     "code": "CHU",
-    "link": "a-home/airtime/CHU"
+    "link": "/CHU"
   },
   {
     "id": 16,
     "name": "DR Congo Orange",
     "code": "DRO",
-    "link": "a-home/airtime/DRO"
+    "link": "/DRO"
   },
   {
     "id": 17,
     "name": "Germany O2",
     "code": "GE2",
-    "link": "a-home/airtime/GE2"
+    "link": "/GE2"
   },
   {
     "id": 18,
     "name": "Germany Vodafone",
     "code": "GEVY",
-    "link": "a-home/airtime/GEVY"
+    "link": "/GEVY"
   },
   {
     "id": 19,
     "name": "Ghana Tigo",
     "code": "GHT",
-    "link": "a-home/airtime/GHT"
+    "link": "/GHT"
   },
   {
     "id": 20,
     "name": "Ghana Vodafone",
     "code": "GHV",
-    "link": "a-home/airtime/GHV"
+    "link": "/GHV"
   },
   {
     "id": 21,
     "name": "Guinea-Conakry Cellcom",
     "code": "GCC",
-    "link": "a-home/airtime/GCC"
+    "link": "/GCC"
   },
   {
     "id": 22,
     "name": "Guinea-Conakry Orange",
     "code": "GUO",
-    "link": "a-home/airtime/GUO"
+    "link": "/GUO"
   },
   {
     "id": 23,
     "name": "India Aircel",
     "code": "INA",
-    "link": "a-home/airtime/INA"
+    "link": "/INA"
   },
   {
     "id": 24,
     "name": "India BSNL",
     "code": "INB",
-    "link": "a-home/airtime/INB"
+    "link": "/INB"
   },
   {
     "id": 25,
     "name": "India Idea Cellular",
     "code": "INC",
-    "link": "a-home/airtime/INC"
+    "link": "/INC"
   },
   {
     "id": 26,
     "name": "India MTS",
     "code": "INM",
-    "link": "a-home/airtime/INM"
+    "link": "/INM"
   },
   {
     "id": 27,
     "name": "India Reliance Communications",
     "code": "URL",
-    "link": "a-home/airtime/URL"
+    "link": "/URL"
   },
   {
     "id": 28,
     "name": "India Tata DOCOMO",
     "code": "ITD",
-    "link": "a-home/airtime/ITD"
+    "link": "/ITD"
   },
   {
     "id": 29,
     "name": "India Telenor",
     "code": "INT",
-    "link": "a-home/airtime/INT"
+    "link": "/INT"
   },
   {
     "id": 30,
     "name": "India Vodafone",
     "code": "INV",
-    "link": "a-home/airtime/INV"
+    "link": "/INV"
   },
   {
     "id": 31,
     "name": "Ivory Coast Moov",
     "code": "IVMO",
-    "link": "a-home/airtime/IVMO"
+    "link": "/IVMO"
   },
   {
     "id": 32,
     "name": "Ivory Coast Orange",
     "code": "IVO",
-    "link": "a-home/airtime/IVO"
+    "link": "/IVO"
   },
   {
     "id": 33,
     "name": "Kenya Orange",
     "code": "KEO",
-    "link": "a-home/airtime/KEO"
+    "link": "/KEO"
   },
   {
     "id": 34,
     "name": "Kenya Safaricom",
     "code": "KES",
-    "link": "a-home/airtime/KES"
+    "link": "/KES"
   },
   {
     "id": 35,
     "name": "Kenya Yu",
     "code": "KEY",
-    "link": "a-home/airtime/KEY"
+    "link": "/KEY"
   },
   {
     "id": 36,
     "name": "Malaysia Celcom Axiata",
     "code": "MCA",
-    "link": "a-home/airtime/MCA"
+    "link": "/MCA"
   },
   {
     "id": 37,
     "name": "Malaysia DIGI",
     "code": "MAD",
-    "link": "a-home/airtime/MAD"
+    "link": "/MAD"
   },
   {
     "id": 38,
     "name": "Malaysia Maxis",
     "code": "MAX",
-    "link": "a-home/airtime/MAX"
+    "link": "/MAX"
   },
   {
     "id": 39,
     "name": "Malaysia Merchantrade",
     "code": "MAM",
-    "link": "a-home/airtime/MAM"
+    "link": "/MAM"
   },
   {
     "id": 40,
     "name": "Malaysia Tune Talk",
     "code": "MTT",
-    "link": "a-home/airtime/MTT"
+    "link": "/MTT"
   },
   {
     "id": 41,
     "name": "Malaysia U Mobile",
     "code": "MUM",
-    "link": "a-home/airtime/MUM"
+    "link": "/MUM"
   },
   {
     "id": 42,
     "name": "Sierra Leone Aricell",
     "code": "SLA",
-    "link": "a-home/airtime/SLA"
+    "link": "/SLA"
   },
   {
     "id": 43,
     "name": "UK Asda",
     "code": "ASDA",
-    "link": "a-home/airtime/ASDA"
+    "link": "/ASDA"
   },
   {
     "id": 44,
     "name": "UK Delight",
     "code": "UKD",
-    "link": "a-home/airtime/UKD"
+    "link": "/UKD"
   },
   {
     "id": 45,
     "name": "UK EE",
     "code": "UKEE",
-    "link": "a-home/airtime/UKEE"
+    "link": "/UKEE"
   },
   {
     "id": 46,
     "name": "UK Giff Gaff",
     "code": "UKG",
-    "link": "a-home/airtime/UKG"
+    "link": "/UKG"
   },
   {
     "id": 47,
     "name": "UK Lebara",
     "code": "UKL",
-    "link": "a-home/airtime/UKL"
+    "link": "/UKL"
   },
   {
     "id": 48,
     "name": "UK Lyca",
     "code": "LYC",
-    "link": "a-home/airtime/LYC"
+    "link": "/LYC"
   },
   {
     "id": 49,
     "name": "UK Now Mobile",
     "code": "UKN",
-    "link": "a-home/airtime/UKN"
+    "link": "/UKN"
   },
   {
     "id": 50,
     "name": "UK O2",
     "code": "UKT",
-    "link": "a-home/airtime/UKT"
+    "link": "/UKT"
   },
   {
     "id": 51,
     "name": "UK Orange",
     "code": "ORG",
-    "link": "a-home/airtime/ORG"
+    "link": "/ORG"
   },
   {
     "id": 52,
     "name": "UK T-Mobile",
     "code": "TMB",
-    "link": "a-home/airtime/TMB"
+    "link": "/TMB"
   },
   {
     "id": 53,
     "name": "UK Talk Home Mobile",
     "code": "TKH",
-    "link": "a-home/airtime/TKH"
+    "link": "/TKH"
   },
   {
     "id": 54,
     "name": "UK Tesco Mobile",
     "code": "TSC",
-    "link": "a-home/airtime/TSC"
+    "link": "/TSC"
   },
   {
     "id": 55,
     "name": "UK Three",
     "code": "THR",
-    "link": "a-home/airtime/THR"
+    "link": "/THR"
   },
   {
     "id": 56,
     "name": "UK Vectone",
     "code": "VCT",
-    "link": "a-home/airtime/VCT"
+    "link": "/VCT"
   },
   {
     "id": 57,
     "name": "UK Virgin Mobile",
     "code": "VRG",
-    "link": "a-home/airtime/VRG"
+    "link": "/VRG"
   },
   {
     "id": 58,
     "name": "UK Vodafone",
     "code": "VDF",
-    "link": "a-home/airtime/VDF"
+    "link": "/VDF"
   },
   {
     "id": 59,
     "name": "UK White Mobile",
     "code": "WHT",
-    "link": "a-home/airtime/WHT"
+    "link": "/WHT"
   },
   {
     "id": 60,
     "name": "United Arab Emirates DU",
     "code": "UAED",
-    "link": "a-home/airtime/UAED"
+    "link": "/UAED"
   },
   {
     "id": 61,
     "name": "United Arab Emirates Etisalat",
     "code": "UAEE",
-    "link": "a-home/airtime/UAEE"
+    "link": "/UAEE"
   },
   {
     "id": 62,
     "name": "USA AT&T",
     "code": "USAT",
-    "link": "a-home/airtime/USAT"
+    "link": "/USAT"
   },
   {
     "id": 63,
     "name": "USA Boot",
     "code": "USBT",
-    "link": "a-home/airtime/USBT"
+    "link": "/USBT"
   },
   {
     "id": 64,
     "name": "USA T Mobile",
     "code": "USTM",
-    "link": "a-home/airtime/USTM"
+    "link": "/USTM"
   },
   {
     "id": 65,
     "name": "USA UltraMobile",
     "code": "USUL",
-    "link": "a-home/airtime/USUL"
+    "link": "/USUL"
   },
   {
     "id": 66,
     "name": "USA Verizon",
     "code": "USVZ",
-    "link": "a-home/airtime/USVZ"
+    "link": "/USVZ"
   }
 ]
