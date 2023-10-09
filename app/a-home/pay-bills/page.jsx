@@ -38,11 +38,11 @@ const page = () => {
           <h5>Utilities</h5>
           <div className="grid grid-cols-2 gap-4">
             <Link
-              href="#"
+              href="/a-home/airtime"
               className="flex items-center gap-3 px-3 py-2 bg-gray-100 rounded-sm text-xs"
             >
               <SlGlobe className="text-base" />
-              International Airtime
+              Airtime
             </Link>
             <Link
               href="#"
