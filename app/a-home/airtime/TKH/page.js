@@ -13,7 +13,7 @@ const page = () => {
       </div>
       <div className="h-14 w-full p-4"></div>
       <div className="w-full flex flex-col justify-center gap-3">
-        <Providers name="Benin Moov" code="BEMV" link="#" />
+        <Providers name="UK Talk Home Mobile" code="TKH" link="#" />
         <div className="w-full flex flex-col justify-center px-4">
           <div className="flex flex-col justify-center py-4">
             <label>Phone Number</label>
@@ -33,19 +33,12 @@ const page = () => {
               id="amount"
               class="bg-gray-200 focus:ring-red-200 w-fit p-3 block outline-red-200"
             >
-              <option selected value="500">
-                500 XOF Top Up
+              <option selected value="29297">
+                29297GNF Top Up
               </option>
-              <option value="1000">1000 XOF Top Up</option>
-              <option value="2000">2000 XOF Top Up</option>
-              <option value="2500">2500 XOF Top Up</option>
-              <option value="4000">4000 XOF Top Up</option>
-              <option value="5000">5000 XOF Top Up</option>
-              <option value="6000">6000 XOF Top Up</option>
-              <option value="8500">8500 XOF Top Up</option>
-              <option value="10000">10000 XOF Top Up</option>
-              <option value="20000">20000 XOF Top Up</option>
-              <option value="1500">1500.00XOF</option>
+              <option value="73243">73243GNF Top Up</option>
+              <option value="146486">146486GNF</option>
+              <option value="292972">292972GNF</option>
             </select>
           </div>
           <div className="flex justify-center items-center px-6 py-4">

@@ -142,7 +142,7 @@ export default function RootLayout({ children }) {
                 <p className="p-0 m-0">Pay Bills</p>
               </Link>
               <Link
-                href="#"
+                href="/a-home/airtime"
                 className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
               >
                 <MdOutlinePhonelinkRing className="text-xl p-0 m-0" />
