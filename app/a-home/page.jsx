@@ -135,9 +135,7 @@ const page = () => {
         </div>
       </div>
 
-      <div
-        className={`{ open ? "flex" : "hidden" }  w-full absolute bottom-0 left-0 bg-red-500`}
-      >
+      <div className="w-full hidden absolute bottom-0 left-0 bg-red-500">
         <div className="pb-12 bg-white text-xs px-4 flex flex-col flex-wrap justify-center">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center gap-4">
@@ -232,10 +230,7 @@ const page = () => {
           <FaMoneyBillTransfer className="text-xl p-0 m-0" />
           <p className="p-0 m-0">Transfer</p>
         </Link>
-        <button
-          onClick={setOpen(true)}
-          className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
-        >
+        <button className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white">
           <CgMenuGridO className="text-xl p-0 m-0" />
           <p className="p-0 m-0">More</p>
         </button>
