@@ -45,7 +45,7 @@ const page = () => {
               Airtime
             </Link>
             <Link
-              href="#"
+              href="/a-home/electricity"
               className="flex items-center gap-3 px-3 py-2 bg-gray-100 rounded-sm text-xs"
             >
               <FaRegLightbulb className="text-base" />
