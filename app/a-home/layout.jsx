@@ -1,7 +1,4 @@
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dashbord",
@@ -11,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <div className="flex items-start justify-center">
           <div className="z-10 lg:max-w-5xl w-full items-center justify-center text-sm lg:flex">
             {/* <div className="fixed left-0 top-0 flex w-full px-4 border-b border-gray-300 bg-green-500 text-white py-4 justify-between">
