@@ -1,93 +1,63 @@
-import Input from "@/components/Input";
+import AdminFooter from "@/components/AdminFooter";
+import Banner from "@/components/Banner";
+import Input, { FormInput } from "@/components/Input";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
-  let dateVal = new Date();
-  let day = dateVal.getDay();
-  let date = dateVal.getUTCDate();
-  let month = dateVal.getUTCMonth();
-  let year = dateVal.getUTCFullYear();
-  if (day === 1) {
-    day = "Monday";
-  } else if (day === 2) {
-    day = "Tuesday";
-  } else if (day === 3) {
-    day = "Wednesday";
-  } else if (day === 4) {
-    day = "Thursday";
-  } else if (day === 5) {
-    day = "Friday";
-  } else if (day === 6) {
-    day = "Saturday";
-  } else if (day === 7) {
-    day = "Sunday";
-  } else {
-    day = "No data!";
-  }
-
-  if (month === 1) {
-    month = "January";
-  } else if (month === 2) {
-    month = "February";
-  } else if (month === 3) {
-    month = "March";
-  } else if (month === 4) {
-    month = "April";
-  } else if (month === 5) {
-    month = "May";
-  } else if (month === 6) {
-    month = "June";
-  } else if (month === 7) {
-    month = "July";
-  } else if (month === 8) {
-    month = "August";
-  } else if (month === 9) {
-    month = "September";
-  } else if (month === 10) {
-    month = "October";
-  } else if (month === 11) {
-    month = "November";
-  } else if (month === 12) {
-    month = "December";
-  } else {
-    month = "No data!";
-  }
   return (
     <div className="p-6 flex justify-center items-center">
       <div className="flex flex-col">
-        <div className="flex justify-between items-center pb-12">
-          <div className="capitalize font-bold">
-            Individual Banking
-            <br />
-            {day} {date} {month}, {year}
-          </div>
-          <div className="font-bold">
-            <Link href="a-home">Fidelity Bank logo</Link>
-          </div>
-        </div>
+        <Banner title="Individual Login Page" />
         <div className="w-full flex justify-center">
           <div className="w-full py-4 grid sm:grid-cols-2 gap-3">
-            <button className="py-2 px-4 border-[1px] text-sky-600 border-sky-600 capitalize font-semibold tracking-wider">
-              <Link href="/validate-email">Open A New Account</Link>
-            </button>
-            <Input label="username *" required />
-            <Input label="password *" required />
-            <div className="flex flex-wrap-reverse justify-between items-center">
+            <Link
+              className="transition-all duration-500 py-2 px-4 text-center border-[1px] text-sky-500 border-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-600 hover:text-white"
+              href="/validate-email"
+            >
+              Open A New Account
+            </Link>
+            <FormInput
+              labelName="Username"
+              for="username"
+              name="username"
+              placeholder="Enter Email or Username *"
+              type="text"
+              required
+            />
+            <FormInput
+              labelName="Password"
+              for="password"
+              name="password"
+              placeholder="Enter Password *"
+              type="password"
+              required
+            />
+            <div className="flex text-xs md:text-sm flex-wrap-reverse justify-between items-center">
               <div className="flex flex-col flex-wrap gap-1 justify-center">
-                <Link href="/validate-account">Reset password ?</Link>
-                <Link href="/validate-account">Recover Account ? </Link>
+                <Link
+                  className="hover:text-green-500 transition-all duration-500"
+                  href="/validate-account"
+                >
+                  Reset password ?
+                </Link>
+                <Link
+                  className="hover:text-green-500 transition-all duration-500"
+                  href="/validate-account"
+                >
+                  Recover Account ?{" "}
+                </Link>
               </div>
-              <button className="py-2 px-4 text-white bg-green-500 capitalize font-semibold tracking-wider">
-                <Link href="/otp">login</Link>
-              </button>
+              <Link href="/otp">
+                <button className="py-2 px-4 bg-green-400 capitalize font-semibold tracking-wider hover:bg-green-600 text-white transition-all duration-500">
+                  login
+                </button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="text-center pt-12 text-xs sm:text-sm">
-          Privacy Policy | GAIM Promo | Branch Locator | FAQ Corporate
-          Registration Form/Guide | Copyright Fidelity Bank 20
-        </div>
+        <AdminFooter />
       </div>
     </div>
   );
