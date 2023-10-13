@@ -134,106 +134,110 @@ const page = () => {
           <div className="h-14 w-full p-4"></div>
         </div>
       </div>
-
-      <div className="w-full hidden absolute bottom-0 left-0 bg-red-500">
-        <div className="pb-12 bg-white text-xs px-4 flex flex-col flex-wrap justify-center">
-          <div className="flex justify-between items-center py-6">
-            <div className="flex items-center gap-4">
-              <div className=" rounded-full w-10 h-10 flex justify-center items-center text-4xl text-red-500 bg-red-50">
-                <FaRegCircleUser />
+      <div className="fixed bottom-0 left-0 flex flex-col w-full ">
+        <div className={`w-full ${open ? "block" : "hidden"} bg-red-500`}>
+          <div className="pb-4 bg-white text-xs px-4 flex flex-col flex-wrap justify-center">
+            <div className="flex justify-between items-center py-6">
+              <div className="flex items-center gap-4">
+                <div className=" rounded-full w-10 h-10 flex justify-center items-center text-4xl text-red-500 bg-red-50">
+                  <FaRegCircleUser />
+                </div>
+                <div>
+                  <p className="font-bold tracking-wider">ACCOUNT NAME</p>
+                  <p className="text-gray-500">BVN: 22222222222</p>
+                </div>
               </div>
-              <div>
-                <p className="font-bold tracking-wider">ACCOUNT NAME</p>
-                <p className="text-gray-500">BVN: 22222222222</p>
-              </div>
+              <FaPowerOff className="text-xl text-red-600" />
             </div>
-            <FaPowerOff className="text-xl text-red-600" />
-          </div>
-          <div className="flex flex-col justify-center gap-4 capitalize">
-            <Link href="#" className="flex gap-2 items-center">
-              <AiFillCreditCard className="text-base" />
-              <p>cards</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <MdLocationOn className="text-base" />
-              <p>locate us</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <FaPeopleGroup className="text-base" />
-              <p>manage beneficiaries</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <FaCalculator className="text-base" />
-              <p>forex calculator</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <MdAddShoppingCart className="text-base" />
-              <p>product & services</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <AiOutlineStock className="text-base" />
-              <p>personal finance manager</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <FaUmbrellaBeach className="text-base" />
-              <p>lifestyle</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <MdOutlineSettingsSuggest className="text-base" />
-              <p>settings</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <MdNotificationsActive className="text-base" />
-              <p>alerts</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <CiBarcode className="text-base" />
-              <p>QR payments</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <FaRegCircleUser className="text-base" />
-              <p>profile</p>
-            </Link>
-            <Link href="#" className="flex gap-2 items-center">
-              <MdOutlineEventAvailable className="text-base" />
-              <p>upcoming payments</p>
-            </Link>
+            <div className="flex flex-col justify-center gap-4 capitalize">
+              <Link href="#" className="flex gap-2 items-center">
+                <AiFillCreditCard className="text-base" />
+                <p>cards</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <MdLocationOn className="text-base" />
+                <p>locate us</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <FaPeopleGroup className="text-base" />
+                <p>manage beneficiaries</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <FaCalculator className="text-base" />
+                <p>forex calculator</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <MdAddShoppingCart className="text-base" />
+                <p>product & services</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <AiOutlineStock className="text-base" />
+                <p>personal finance manager</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <FaUmbrellaBeach className="text-base" />
+                <p>lifestyle</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <MdOutlineSettingsSuggest className="text-base" />
+                <p>settings</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <MdNotificationsActive className="text-base" />
+                <p>alerts</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <CiBarcode className="text-base" />
+                <p>QR payments</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <FaRegCircleUser className="text-base" />
+                <p>profile</p>
+              </Link>
+              <Link href="#" className="flex gap-2 items-center">
+                <MdOutlineEventAvailable className="text-base" />
+                <p>upcoming payments</p>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="fixed bottom-0 left-0 flex h-12 w-full items-center justify-between bg-red-600 text-gray-200 px-6 font-sans text-xs">
-        <Link
-          href="/a-home"
-          className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
-        >
-          <AiOutlineBank className="text-xl p-0 m-0" />
-          <p className="p-0 m-0">Home</p>
-        </Link>
-        <Link
-          href="/a-home/pay-bills"
-          className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
-        >
-          <FaHandHoldingUsd className="text-xl p-0 m-0" />
-          <p className="p-0 m-0">Pay Bills</p>
-        </Link>
-        <Link
-          href="/a-home/airtime"
-          className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
-        >
-          <MdOutlinePhonelinkRing className="text-xl p-0 m-0" />
-          <p className="p-0 m-0">Airtime</p>
-        </Link>
-        <Link
-          href="/a-home/transfer"
-          className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
-        >
-          <FaMoneyBillTransfer className="text-xl p-0 m-0" />
-          <p className="p-0 m-0">Transfer</p>
-        </Link>
-        <button className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white">
-          <CgMenuGridO className="text-xl p-0 m-0" />
-          <p className="p-0 m-0">More</p>
-        </button>
+        <div className="flex h-12 w-full items-center justify-between bg-red-600 text-gray-200 px-6 font-sans text-xs">
+          <Link
+            href="/a-home"
+            className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
+          >
+            <AiOutlineBank className="text-xl p-0 m-0" />
+            <p className="p-0 m-0">Home</p>
+          </Link>
+          <Link
+            href="/a-home/pay-bills"
+            className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
+          >
+            <FaHandHoldingUsd className="text-xl p-0 m-0" />
+            <p className="p-0 m-0">Pay Bills</p>
+          </Link>
+          <Link
+            href="/a-home/airtime"
+            className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
+          >
+            <MdOutlinePhonelinkRing className="text-xl p-0 m-0" />
+            <p className="p-0 m-0">Airtime</p>
+          </Link>
+          <Link
+            href="/a-home/transfer"
+            className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
+          >
+            <FaMoneyBillTransfer className="text-xl p-0 m-0" />
+            <p className="p-0 m-0">Transfer</p>
+          </Link>
+          <button
+            onClick={() => setOpen(!open)}
+            className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"
+          >
+            <CgMenuGridO className="text-xl p-0 m-0" />
+            <p className="p-0 m-0">More</p>
+          </button>
+        </div>
       </div>
     </>
   );
