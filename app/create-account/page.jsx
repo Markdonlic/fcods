@@ -7,9 +7,11 @@ const page = () => {
     <div className="p-6 flex justify-center items-center">
       <div className="flex flex-col">
         <div className="flex justify-between items-center">
-          <div className="uppercase font-bold">
-            We Are Fidelity,
-            <br /> We Keep Our Word
+          <div className="font-bold flex flex-col justify-center">
+            <p>
+              Welcome to <span className="text-[#0066ff]">FCODS</span>,
+            </p>
+            <p>We Keep Our Word</p>
           </div>
           <div className="font-bold">Fidelity Bank logo</div>
         </div>

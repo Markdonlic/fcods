@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="flex items-start justify-center">
-          <div className="z-10 lg:max-w-5xl w-full items-center justify-center font-mono text-sm lg:flex">
+          <div className="z-10 lg:max-w-5xl w-full items-center justify-center text-sm lg:flex">
             {/* <div className="fixed left-0 top-0 flex w-full px-4 border-b border-gray-300 bg-green-500 text-white py-4 justify-between">
               <div className="flex items-center justify-center text-2xl gap-1 font-bold">
                 <Image

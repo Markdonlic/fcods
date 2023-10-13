@@ -31,7 +31,7 @@ import {
   MdOutlineSettingsSuggest,
 } from "react-icons/md";
 const page = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   return (
     <>
       <div className="w-full flex flex-col justify-center items-center gap-3">
@@ -139,15 +139,20 @@ const page = () => {
           <div className="pb-4 bg-white text-xs px-4 flex flex-col flex-wrap justify-center">
             <div className="flex justify-between items-center py-6">
               <div className="flex items-center gap-4">
-                <div className=" rounded-full w-10 h-10 flex justify-center items-center text-4xl text-red-500 bg-red-50">
+                <Link
+                  href="#"
+                  className=" rounded-full w-10 h-10 flex justify-center items-center text-4xl text-red-500 bg-red-50"
+                >
                   <FaRegCircleUser />
-                </div>
+                </Link>
                 <div>
                   <p className="font-bold tracking-wider">ACCOUNT NAME</p>
                   <p className="text-gray-500">BVN: 22222222222</p>
                 </div>
               </div>
-              <FaPowerOff className="text-xl text-red-600" />
+              <Link href="/login">
+                <FaPowerOff className="text-xl text-red-600" />
+              </Link>
             </div>
             <div className="flex flex-col justify-center gap-4 capitalize">
               <Link href="#" className="flex gap-2 items-center">
