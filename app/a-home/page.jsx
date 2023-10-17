@@ -2,10 +2,7 @@
 import Alert from "@/components/Alert";
 import { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-
-import Image from "next/image";
 import Link from "next/link";
-
 import { CgMenuGridO } from "react-icons/cg";
 import { CiBarcode } from "react-icons/ci";
 import {
@@ -31,16 +28,14 @@ import {
   MdOutlineSettingsSuggest,
 } from "react-icons/md";
 const page = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="w-full flex flex-col justify-center items-center gap-3">
-        <div className="bg-red-500 w-full fixed top-0 left-0 h-16 flex items-center justify-between text-white px-4 text-3xl">
-          <div className="font-semibold tracking-normal">
-            <h2>
-              Good Morning, <span> Joe</span>
-            </h2>
-          </div>
+        <div className="bg-sky-500 z-10 w-full fixed top-0 left-0 h-16 flex gap-3 items-center justify-between text-white px-4 text-xl">
+          <p className="font-semibold tracking-normal flex flex-1">
+            Good Morning, Joe
+          </p>
           <div>
             <MdNotificationsActive />
           </div>
@@ -52,59 +47,57 @@ const page = () => {
         <div className="bg-white w-full flex flex-col justify-center items-center gap-3">
           <div className="w-[90%] bg-gradient-to-r from-neutral-700 to-neutral-500 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
             <div className="flex w-full justify-between items-center">
-              <div className="text-xs">Total Balance</div>
+              <h6 className="text-xs">Total Balance</h6>
               <div className="text-2xl">
                 <MdOutlineSettingsSuggest />
               </div>
             </div>
             <div className="flex w-full justify-between items-center">
-              <div className="font-semibold">NGN2,002,023.28</div>
-              <div className="hidden text-xs tracking-normal flex justify-center items-center gap-1">
+              <p className="font-semibold">NGN2,002,023.28</p>
+              <div className="text-xs tracking-normal hidden lg:flex justify-center items-center gap-1">
                 <AiOutlineEyeInvisible className="text-xl" />
-                Show Balance
+                <span>Show Balance</span>
               </div>
               <div className="text-xs tracking-normal flex justify-center items-center gap-1">
                 <AiOutlineEye className="text-xl" />
-                Hide Balance
+                <span>Hide Balance</span>
               </div>
             </div>
           </div>
 
-          <div className="w-[90%] bg-red-600 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
+          <div className="w-[90%] bg-sky-600 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
             <div className="flex w-full justify-between items-center">
-              <div className="uppercase font-semibold">John Doe</div>
+              <p className="uppercase font-semibold">John Doe</p>
               <div className="text-xs flex justify-center items-center gap-1">
                 <div className="p-1 bg-green-500 rounded-full"></div>
                 <p>Active</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <div className="text-gray-200 opacity-70">SAVINGS ACCT</div>
+              <h5 className="text-gray-200 opacity-70">SAVINGS ACCT</h5>
               <div>NGN2,002,023.28</div>
             </div>
             <div className="flex w-full justify-between items-center">
-              <div className="text-xs py-1 px-3 rounded-xl bg-red-400">
+              <p className="text-xs py-1 px-3 rounded-xl bg-sky-400">
                 2236681052
-              </div>
+              </p>
               <div className="text-xs tracking-normal flex justify-center items-center gap-1">
                 <AiOutlineEyeInvisible className="text-xl" />
-                Show Balance
+                <span>Show Balance</span>
               </div>
-              <div className="hidden text-xs tracking-normal flex justify-center items-center gap-1">
+              <div className="hidden text-xs tracking-normal md:flex justify-center items-center gap-1">
                 <AiOutlineEye className="text-xl" />
-                Hide Balance
+                <span>Hide Balance</span>
               </div>
             </div>
           </div>
 
           <div className="w-[90%] flex flex-col gap-1 justify-center items-center tracking-normal">
             <div className="flex w-full justify-between items-center  py-4 px-2 bg-white shadow-xl">
-              <div className="capitalize font-semibold">
-                recent transactions
-              </div>
-              <div className="capitalize text-xs text-red-500">
+              <p className="capitalize font-semibold">recent transactions</p>
+              <p className="capitalize text-xs text-red-500">
                 view transaction history
-              </div>
+              </p>
             </div>
             <div className="flex w-full justify-between items-center py-4 px-2 bg-white shadow-xl">
               <Alert />
@@ -119,29 +112,27 @@ const page = () => {
 
           <div className="w-[90%] bg-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
             <div className="flex w-full justify-between items-center">
-              <div className="capitalize font-semibold">my favourites</div>
-              <div className="text-xs text-red-500">Add Favourites</div>
+              <p className="capitalize font-semibold">my favourites</p>
+              <p className="text-xs text-red-500">Add Favourites</p>
             </div>
             <div className="flex flex-col justify-center gap-2 items-center text-gray-400">
               <div className="pt-6 text-5xl">
                 <MdOutlineFavoriteBorder />
               </div>
-              <div className="pb-4">
-                Oops! You don't have any favourites yet
-              </div>
+              <p className="pb-4">Oops! You don't have any favourites yet</p>
             </div>
           </div>
           <div className="h-14 w-full p-4"></div>
         </div>
       </div>
       <div className="fixed bottom-0 left-0 flex flex-col w-full ">
-        <div className={`w-full ${open ? "block" : "hidden"} bg-red-500`}>
+        <div className={`w-full ${open ? "block" : "hidden"} bg-sky-500`}>
           <div className="pb-4 bg-white text-xs px-4 flex flex-col flex-wrap justify-center">
             <div className="flex justify-between items-center py-6">
               <div className="flex items-center gap-4">
                 <Link
                   href="#"
-                  className=" rounded-full w-10 h-10 flex justify-center items-center text-4xl text-red-500 bg-red-50"
+                  className=" rounded-full w-10 h-10 flex justify-center items-center text-4xl text-sky-500 bg-sky-50"
                 >
                   <FaRegCircleUser />
                 </Link>
@@ -151,7 +142,7 @@ const page = () => {
                 </div>
               </div>
               <Link href="/login">
-                <FaPowerOff className="text-xl text-red-600" />
+                <FaPowerOff className="text-xl text-sky-600" />
               </Link>
             </div>
             <div className="flex flex-col justify-center gap-4 capitalize">
@@ -206,7 +197,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-12 w-full items-center justify-between bg-red-600 text-gray-200 px-6 font-sans text-xs">
+        <div className="flex h-12 w-full items-center justify-between bg-sky-600 text-gray-200 px-6 font-sans text-xs">
           <Link
             href="/a-home"
             className="flex flex-col items-center justify-center p-1 text-gray-100 hover:text-white active:text-white"

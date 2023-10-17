@@ -7,7 +7,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="p-6 flex justify-center items-center">
+    <div className="p-6 flex justify-center items-center min-h-screen">
       <div className="flex flex-col">
         <Banner title="Individual Login Page" />
         <div className="w-full flex justify-center">
@@ -34,7 +34,7 @@ const page = () => {
               type="password"
               required
             />
-            <div className="flex text-xs md:text-sm flex-wrap-reverse justify-between items-center">
+            <div className="flex text-xs md:text-sm lg:text-base flex-wrap-reverse justify-between items-center">
               <div className="flex flex-col flex-wrap gap-1 justify-center">
                 <Link
                   className="hover:text-green-500 transition-all duration-500"

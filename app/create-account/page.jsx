@@ -1,14 +1,14 @@
-import Input, { FormInput } from "@/components/Input";
+import AdminFooter from "@/components/AdminFooter";
+import { FormInput } from "@/components/Input";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
-  const year = new Date();
   return (
-    <div className="p-6 flex justify-center items-center">
+    <div className="p-6 flex justify-center items-center min-h-screen">
       <div className="flex flex-col gap-4">
-        <div className="flex gap-1 items-center justify-between pr-4 bg-white">
+        <div className="flex flex-wrap gap-1 items-center justify-between pr-4 bg-white">
           <div className="flex gap-1 items-center">
             <div className="font-bold">
               <Image
@@ -130,7 +130,7 @@ const page = () => {
               placeholder="Date of Birth *"
               required
             />
-            <div className="flex justify-between items-center gap-2">
+            <div className="text-xs md:text-sm lg:text-base flex justify-between items-center gap-2">
               <Link href="/a-home">
                 <button className="py-2 px-4 bg-green-400 capitalize font-semibold tracking-wider hover:bg-green-600 hover:text-gray-200 transition-all duration-500">
                   submit
@@ -139,48 +139,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="text-center w-full text-xs sm:text-sm px-6 py-4 bg-blue-800 text-white">
-          <p className=" gap-2">
-            <Link
-              href="#"
-              className="hover:text-green-300 transition-all duration-500"
-            >
-              Privacy Policy
-            </Link>{" "}
-            |
-            <Link
-              href="#"
-              className="hover:text-green-300 transition-all duration-500"
-            >
-              {" "}
-              FCODS Promo{" "}
-            </Link>{" "}
-            |
-            <Link
-              href="#"
-              className="hover:text-green-300 transition-all duration-500"
-            >
-              {" "}
-              Branch Locator{" "}
-            </Link>{" "}
-            |
-            <Link
-              href="#"
-              className="hover:text-green-300 transition-all duration-500"
-            >
-              {" "}
-              FAQ Corporate Registration Form/Guide
-            </Link>{" "}
-            |
-            <Link
-              href="#"
-              className="hover:text-green-300 transition-all duration-500"
-            >
-              {" "}
-              Copyright FCODS {year.getFullYear()}
-            </Link>
-          </p>
-        </div>
+        <AdminFooter />
       </div>
     </div>
   );

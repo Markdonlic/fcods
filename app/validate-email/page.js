@@ -1,12 +1,11 @@
 import AdminFooter from "@/components/AdminFooter";
 import Banner from "@/components/Banner";
-import Input, { FormInput } from "@/components/Input";
+import { FormInput } from "@/components/Input";
 import Link from "next/link";
-import React from "react";
 
 const page = () => {
   return (
-    <div className="p-6 flex justify-center items-center">
+    <div className="p-6 flex justify-center items-center min-h-screen">
       <div className="flex flex-col">
         <Banner title="Email Validation Page" />
         <div className="w-full flex justify-center">

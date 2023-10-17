@@ -1,12 +1,12 @@
 import AdminFooter from "@/components/AdminFooter";
 import Banner from "@/components/Banner";
-import Input, { FormInput } from "@/components/Input";
+import { FormInput } from "@/components/Input";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="p-6 flex justify-center items-center">
+    <div className="p-6 flex justify-center items-center min-h-screen">
       <div className="flex flex-col">
         <Banner title="Verification Page" />
         <div className="w-full flex justify-center">
@@ -28,7 +28,7 @@ const page = () => {
               type="text"
               required
             />
-            <div className="text-xs md:text-sm flex flex-wrap-reverse justify-between items-center">
+            <div className="text-xs md:text-sm lg:text-base flex flex-wrap-reverse justify-between items-center">
               <Link
                 className="transition-all duration-500 py-2 px-4 text-center border-[1px] text-sky-500 border-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-600 hover:text-white"
                 href="/validate-email"

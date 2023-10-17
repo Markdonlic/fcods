@@ -1,12 +1,11 @@
 import AdminFooter from "@/components/AdminFooter";
 import Banner from "@/components/Banner";
-import Input, { FormInput } from "@/components/Input";
+import { FormInput } from "@/components/Input";
 import Link from "next/link";
-import React from "react";
 
 const page = () => {
   return (
-    <div className="p-6 flex justify-center items-center">
+    <div className="p-6 flex justify-center items-center min-h-screen">
       <div className="flex flex-col">
         <Banner title="Account Validation Page" />
         <div className="w-full flex justify-center">
@@ -20,11 +19,11 @@ const page = () => {
               required
               disabled
             />
-            <div className="flex flex-wrap-reverse justify-between items-center">
-              <button className="py-2 px-4 border-[1px] border-sky-600 text-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-100">
+            <div className="flex flex-wrap-reverse justify-between items-center text-xs md:text-sm">
+              <button className="transition-all duration-500 py-2 px-4 text-center border-[1px] text-sky-500 border-sky-600 capitalize font-semibold tracking-wider hover:bg-sky-600 hover:text-white">
                 <Link href="/login">Back to Login</Link>
               </button>
-              <button className="py-2 px-4 text-white bg-green-500 capitalize font-semibold tracking-wider">
+              <button className="py-2 px-4 bg-green-400 capitalize font-semibold tracking-wider hover:bg-green-600 text-white transition-all duration-500">
                 <Link href="/otp">Validate</Link>
               </button>
             </div>

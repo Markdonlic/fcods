@@ -39,7 +39,7 @@ const page = () => {
   );
 
   return (
-    <div className="p-6 flex justify-center items-center">
+    <div className="p-6 flex justify-center items-center min-h-screen">
       {open && otpModal}
       <div className="flex flex-col">
         <div className="flex gap-1 items-center">
@@ -47,14 +47,16 @@ const page = () => {
             <Image
               src="/icons/android-chrome-512x512.png"
               alt="PCODS Logo"
-              width={50}
-              height={50}
+              width={70}
+              height={70}
             />
           </Link>
           <div className="uppercase font-bold text-blue-900">
-            FCO Digital services
-            <br /> Online Account
-            <br /> Opening Portal
+            <h1>
+              FCO Digital services
+              <br /> Online Account
+              <br /> Opening Portal
+            </h1>
           </div>
         </div>
         <div className="pt-4 text-xs font-bold">
