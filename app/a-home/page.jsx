@@ -30,9 +30,9 @@ import {
 const page = () => {
   const [open, setOpen] = useState(false);
   return (
-    <>
-      <div className="w-full flex flex-col justify-center items-center gap-3">
-        <div className="bg-sky-500 z-10 w-full fixed top-0 left-0 h-16 flex gap-3 items-center justify-between text-white px-4 text-xl">
+    <div className="w-full flex justify-center">
+      <div className="w-full flex flex-col justify-center relative items-center gap-3">
+        <div className="bg-sky-500 z-10 w-full sticky top-0 left-0 right-0 h-16 flex gap-3 items-center justify-between text-white px-4 text-xl">
           <p className="font-semibold tracking-normal flex flex-1">
             Good Morning, Joe
           </p>
@@ -43,9 +43,9 @@ const page = () => {
             <FaRegCircleUser />
           </div>
         </div>
-        <div className="h-16 w-full p-4"></div>
+        <div className="h-16 w-full p-4 hidden"></div>
         <div className="bg-white w-full flex flex-col justify-center items-center gap-3">
-          <div className="w-[90%] bg-gradient-to-r from-neutral-700 to-neutral-500 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
+          <div className="w-[100%] bg-gradient-to-r from-neutral-700 to-neutral-500 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
             <div className="flex w-full justify-between items-center">
               <h6 className="text-xs">Total Balance</h6>
               <div className="text-2xl">
@@ -65,7 +65,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-[90%] bg-sky-600 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
+          <div className="w-[100%] bg-sky-600 text-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
             <div className="flex w-full justify-between items-center">
               <p className="uppercase font-semibold">John Doe</p>
               <div className="text-xs flex justify-center items-center gap-1">
@@ -92,7 +92,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-[90%] flex flex-col gap-1 justify-center items-center tracking-normal">
+          <div className="w-[100%] flex flex-col gap-1 justify-center items-center tracking-normal">
             <div className="flex w-full justify-between items-center  py-4 px-2 bg-white shadow-xl">
               <p className="capitalize font-semibold">recent transactions</p>
               <p className="capitalize text-xs text-red-500">
@@ -110,7 +110,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-[90%] bg-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
+          <div className="w-[100%] bg-white rounded-lg p-4 flex flex-col gap-4 justify-center items-center">
             <div className="flex w-full justify-between items-center">
               <p className="capitalize font-semibold">my favourites</p>
               <p className="text-xs text-red-500">Add Favourites</p>
@@ -125,7 +125,7 @@ const page = () => {
           <div className="h-14 w-full p-4"></div>
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 flex flex-col w-full ">
+      <div className="hidden fixed bottom-0 left-0 flex flex-col w-full ">
         <div className={`w-full ${open ? "block" : "hidden"} bg-sky-500`}>
           <div className="pb-4 bg-white text-xs px-4 flex flex-col flex-wrap justify-center">
             <div className="flex justify-between items-center py-6">
@@ -235,7 +235,7 @@ const page = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

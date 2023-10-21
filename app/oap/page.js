@@ -39,7 +39,7 @@ const page = () => {
   );
 
   return (
-    <div className="p-6 flex justify-center items-center min-h-screen">
+    <div className="p-6 flex max-w-xl justify-center items-center min-h-screen">
       {open && otpModal}
       <div className="flex flex-col">
         <div className="flex gap-1 items-center">

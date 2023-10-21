@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="p-6 flex justify-center items-center min-h-screen">
+    <div className="p-6 flex max-w-xl justify-center items-center min-h-screen">
       <div className="flex flex-col gap-4">
         <div className="flex flex-wrap gap-1 items-center justify-between pr-4 bg-white">
           <div className="flex gap-1 items-center">
@@ -20,7 +20,7 @@ const page = () => {
             </div>
             <div className="font-bold flex flex-col justify-center">
               <p>
-                Welcome to <span className="text-[#0066ff]">FCODS</span>,
+                Welcome to <span className="text-sky-600">FCODS</span>,
               </p>
               <p>We Keep Our Word</p>
             </div>

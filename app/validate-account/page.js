@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="p-6 flex justify-center items-center min-h-screen">
+    <div className="p-6 flex justify-center max-w-xl items-center min-h-screen">
       <div className="flex flex-col">
         <Banner title="Account Validation Page" />
         <div className="w-full flex justify-center">
-          <div className="w-full py-4 grid sm:grid-cols-2 gap-3">
+          <div className="w-full py-4 grid grid-cols-1 gap-3">
             <FormInput
               labelName="Validate Account Number"
               for="accountnumber"
