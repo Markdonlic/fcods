@@ -130,8 +130,6 @@ const page = () => {
             </div>
           </div>
         </div>
-        {/* 
-        <div className="h-16 w-full p-4 hidden"></div> */}
 
         <div className="w-[100%] flex flex-col justify-center items-center tracking-normal">
           <div className="flex w-full justify-between items-center  py-4 px-2 bg-white shadow-xl">
@@ -243,6 +241,7 @@ const page = () => {
         </div>
       </div>
 
+      <div className="h-16 w-full p-4 md:hidden"></div>
       {/* mobile menu */}
       <div className="fixed bottom-0 left-0 right-0 flex flex-col w-full">
         <div className="flex md:hidden h-12 w-full items-center justify-between bg-sky-600 text-gray-200 px-6 font-sans text-xs">
