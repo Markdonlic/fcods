@@ -7,7 +7,7 @@ export default function Providers(props) {
         <div className="">
           <FcGlobe className="p-1 bg-red-100 text-red-600 text-4xl rounded-lg" />
         </div>
-        <div className="py-2 border-b-[1px] border-b-gray-300 w-full flex flex-col flex-wrap items-start justify-center text-base">
+        <div className="py-2 border-b-[1px] border-b-gray-300 w-full flex flex-col flex-wrap items-start justify-center text-sm">
           <div>{props.name}</div>
           <div className="text-green-500 text-fontsemibold">{props.code}</div>
         </div>
