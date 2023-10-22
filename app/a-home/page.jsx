@@ -167,7 +167,7 @@ const page = () => {
       <div
         className={`w-full md:w-[768px] ${
           open
-            ? "fixed md:left-[calc((100% -768px)/2] md:absolute md:top-16 h-1/2 bottom-12"
+            ? "fixed md:left-[calc((100% -768px)/2] md:absolute md:top-16 h-2/3 bottom-12"
             : "hidden"
         } bg-sky-500 overflow-scroll`}
       >
@@ -191,51 +191,51 @@ const page = () => {
           </div>
           <div className="flex flex-col justify-center gap-4 capitalize">
             <Link href="#" className="flex gap-2 items-center">
-              <AiFillCreditCard className="text-base" />
+              <AiFillCreditCard className="text-sm" />
               <p>cards</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <MdLocationOn className="text-base" />
+              <MdLocationOn className="text-sm" />
               <p>locate us</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <FaPeopleGroup className="text-base" />
+              <FaPeopleGroup className="text-sm" />
               <p>manage beneficiaries</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <FaCalculator className="text-base" />
+              <FaCalculator className="text-sm" />
               <p>forex calculator</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <MdAddShoppingCart className="text-base" />
+              <MdAddShoppingCart className="text-sm" />
               <p>product & services</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <AiOutlineStock className="text-base" />
+              <AiOutlineStock className="text-sm" />
               <p>personal finance manager</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <FaUmbrellaBeach className="text-base" />
+              <FaUmbrellaBeach className="text-sm" />
               <p>lifestyle</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <MdOutlineSettingsSuggest className="text-base" />
+              <MdOutlineSettingsSuggest className="text-sm" />
               <p>settings</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <MdNotificationsActive className="text-base" />
+              <MdNotificationsActive className="text-sm" />
               <p>alerts</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <CiBarcode className="text-base" />
+              <CiBarcode className="text-sm" />
               <p>QR payments</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <FaRegCircleUser className="text-base" />
+              <FaRegCircleUser className="text-sm" />
               <p>profile</p>
             </Link>
             <Link href="#" className="flex gap-2 items-center">
-              <MdOutlineEventAvailable className="text-base" />
+              <MdOutlineEventAvailable className="text-sm" />
               <p>upcoming payments</p>
             </Link>
           </div>
