@@ -30,28 +30,29 @@ const page = () => {
             Airtime
           </Link>{" "}
         </div>
-
-        <div className="bg-gray-100 w-full flex flex-col justify-center gap-3">
-          <input
-            className="w-full sticky top-[70px] left-0 right-0 px-4 py-3 rounded-full border-sky-500 border-[1px] text-sm"
-            type="text"
-            name="search"
-            placeholder="Search Your Airtime Provider..."
-          />
-          <div className="w-full flex flex-col justify-center">
-            {networkProviders?.map((items) => {
-              return (
-                <Providers
-                  key={items.id}
-                  name={items.name}
-                  code={items.code}
-                  link={items.link}
-                />
-              );
-            })}
+        <div className="flex flex-col gap-2 px-2">
+          <div className="bg-gray-100 w-full flex flex-col justify-center gap-3">
+            <input
+              className="w-full sticky top-[70px] left-0 right-0 px-4 py-3 rounded-full border-sky-500 border-[1px] text-sm"
+              type="text"
+              name="search"
+              placeholder="Search Your Airtime Provider..."
+            />
+            <div className="w-full flex flex-col justify-center">
+              {networkProviders?.map((items) => {
+                return (
+                  <Providers
+                    key={items.id}
+                    name={items.name}
+                    code={items.code}
+                    link={items.link}
+                  />
+                );
+              })}
+            </div>
           </div>
+          <div className="h-8 w-full"></div>
         </div>
-        <div className="h-8 w-full"></div>
       </div>
     </div>
   );

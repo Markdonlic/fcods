@@ -27,99 +27,103 @@ const page = () => {
             Transfer
           </Link>{" "}
         </div>
-        <div className="bg-gray-100 w-full flex flex-col justify-center gap-3">
-          <div className="w-full flex flex-col justify-center gap-2">
-            <Link
-              href="/a-home/transfer/self-transfer"
-              className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
-            >
-              <div className="flex items-center gap-2">
-                <div className="rounded-full p-2 text-xl bg-white">
-                  <FcMoneyTransfer />
+        <div className="flex flex-col gap-2 px-2">
+          <div className="bg-gray-100 w-full flex flex-col justify-center gap-3">
+            <div className="w-full flex flex-col justify-center gap-2">
+              <Link
+                href="/a-home/transfer/self-transfer"
+                className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="rounded-full p-2 text-xl bg-white">
+                    <FcMoneyTransfer />
+                  </div>
+                  <div>Own Account Transfer</div>
                 </div>
-                <div>Own Account Transfer</div>
-              </div>
-              <div>{">"}</div>
-            </Link>
-            <Link
-              href="/a-home/transfer/mbank-transfer"
-              className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
-            >
-              <div className="flex items-center gap-2">
-                <div className="rounded-full p-2 text-xl bg-sky-600 text-white">
-                  <FaMoneyBillTransfer />
+                <div>{">"}</div>
+              </Link>
+              <Link
+                href="/a-home/transfer/mbank-transfer"
+                className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="rounded-full p-2 text-xl bg-sky-600 text-white">
+                    <FaMoneyBillTransfer />
+                  </div>
+                  <div>Transfer to FCODS Account</div>
                 </div>
-                <div>Transfer to FCODS Account</div>
-              </div>
-              <div>{">"}</div>
-            </Link>
-            <Link
-              href="/a-home/transfer/other-banks"
-              className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
-            >
-              <div className="flex items-center gap-2">
-                <div className="rounded-full p-2 text-xl bg-emerald-600 text-white">
-                  <AiTwotoneBank />
+                <div>{">"}</div>
+              </Link>
+              <Link
+                href="/a-home/transfer/other-banks"
+                className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="rounded-full p-2 text-xl bg-emerald-600 text-white">
+                    <AiTwotoneBank />
+                  </div>
+                  <div>Transfer to Other Bank Account</div>
                 </div>
-                <div>Transfer to Other Bank Account</div>
-              </div>
-              <div>{">"}</div>
-            </Link>
-            <Link
-              href="/a-home/transfer/international-transfer"
-              className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
-            >
-              <div className="flex items-center gap-2">
-                <div className="rounded-full p-2 text-xl bg-teal-600 text-white">
-                  <SiRotaryinternational />
+                <div>{">"}</div>
+              </Link>
+              <Link
+                href="/a-home/transfer/international-transfer"
+                className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="rounded-full p-2 text-xl bg-teal-600 text-white">
+                    <SiRotaryinternational />
+                  </div>
+                  <div>International Transfer</div>
                 </div>
-                <div>International Transfer</div>
-              </div>
-              <div>{">"}</div>
-            </Link>
-            <Link
-              href="/a-home/transfer/card-transfer"
-              className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
-            >
-              <div className="flex items-center gap-2">
-                <div className="rounded-full p-2 text-xl bg-orange-500 text-white">
-                  <RiBankCardFill />
+                <div>{">"}</div>
+              </Link>
+              <Link
+                href="/a-home/transfer/card-transfer"
+                className="flex justify-between items-center gap-2 border-[1px] border-gray-400 bg-white px-1 pr-4 py-1 rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="rounded-full p-2 text-xl bg-orange-500 text-white">
+                    <RiBankCardFill />
+                  </div>
+                  <div>Transfer to Card</div>
                 </div>
-                <div>Transfer to Card</div>
-              </div>
-              <div>{">"}</div>
-            </Link>
-          </div>
-        </div>
-
-        <div className="w-full flex flex-col justify-center items-center tracking-normal">
-          <div className="flex w-full justify-between items-center py-4 px-2 bg-white shadow-xl">
-            <div className="capitalize font-semibold">recent transactions</div>
-            <div className="capitalize text-xs text-red-500">
-              view transaction history
+                <div>{">"}</div>
+              </Link>
             </div>
           </div>
-          <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
-            <Alert />
-          </div>
-        </div>
 
-        <div className="h-2 w-full"></div>
+          <div className="w-full flex flex-col justify-center items-center tracking-normal">
+            <div className="flex w-full justify-between items-center py-4 px-2 bg-white shadow-xl">
+              <div className="capitalize font-semibold">
+                recent transactions
+              </div>
+              <div className="capitalize text-xs text-red-500">
+                view transaction history
+              </div>
+            </div>
+            <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-3 px-2 bg-white">
+              <Alert />
+            </div>
+          </div>
+
+          <div className="h-2 w-full"></div>
+        </div>
       </div>
     </div>
   );

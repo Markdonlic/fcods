@@ -84,81 +84,82 @@ const page = () => {
             <FaRegCircleUser />
           </div>
         </div>
+        <div className="flex flex-col gap-2 px-2">
+          <div className="w-[100%] bg-gradient-to-r from-neutral-700 to-neutral-500 text-white p-4 flex flex-col gap-4 justify-center items-center">
+            <div className="flex w-full justify-between items-center">
+              <h6 className="text-xs">Total Balance</h6>
+              <div className="text-2xl">
+                <MdOutlineSettingsSuggest />
+              </div>
+            </div>
+            <div className="flex w-full justify-between items-center">
+              <p className="font-semibold">NGN2,002,023.28</p>
+              <div className="text-xs tracking-normal hidden lg:flex justify-center items-center gap-1">
+                <AiOutlineEyeInvisible className="text-xl" />
+                <span>Show Balance</span>
+              </div>
+              <div className="text-xs tracking-normal flex justify-center items-center gap-1">
+                <AiOutlineEye className="text-xl" />
+                <span>Hide Balance</span>
+              </div>
+            </div>
+          </div>
+          <div className="w-[100%] bg-sky-600 text-white p-4 flex flex-col gap-4 justify-center items-center">
+            <div className="flex w-full justify-between items-center">
+              <p className="uppercase font-semibold">John Doe</p>
+              <div className="text-xs flex justify-center items-center gap-1">
+                <div className="p-1 bg-green-500 rounded-full"></div>
+                <p>Active</p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <h5 className="text-gray-200 opacity-70">SAVINGS ACCT</h5>
+              <div>NGN2,002,023.28</div>
+            </div>
+            <div className="flex w-full justify-between items-center">
+              <p className="text-xs py-1 px-3 rounded-xl bg-sky-400">
+                2236681052
+              </p>
+              <div className="text-xs tracking-normal flex justify-center items-center gap-1">
+                <AiOutlineEyeInvisible className="text-xl" />
+                <span>Show Balance</span>
+              </div>
+              <div className="hidden text-xs tracking-normal flex justify-center items-center gap-1">
+                <AiOutlineEye className="text-xl" />
+                <span>Hide Balance</span>
+              </div>
+            </div>
+          </div>
 
-        <div className="w-[100%] bg-gradient-to-r from-neutral-700 to-neutral-500 text-white p-4 flex flex-col gap-4 justify-center items-center">
-          <div className="flex w-full justify-between items-center">
-            <h6 className="text-xs">Total Balance</h6>
-            <div className="text-2xl">
-              <MdOutlineSettingsSuggest />
+          <div className="w-[100%] flex flex-col justify-center items-center tracking-normal">
+            <div className="flex w-full justify-between items-center  py-4 px-2 bg-white shadow-xl">
+              <p className="capitalize font-semibold">recent transactions</p>
+              <p className="capitalize text-xs text-red-500">
+                view transaction history
+              </p>
+            </div>
+            <div className="flex w-full justify-between items-center py-4 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-4 px-2 bg-white">
+              <Alert />
+            </div>
+            <div className="flex w-full justify-between items-center py-4 px-2 bg-white">
+              <Alert />
             </div>
           </div>
-          <div className="flex w-full justify-between items-center">
-            <p className="font-semibold">NGN2,002,023.28</p>
-            <div className="text-xs tracking-normal hidden lg:flex justify-center items-center gap-1">
-              <AiOutlineEyeInvisible className="text-xl" />
-              <span>Show Balance</span>
-            </div>
-            <div className="text-xs tracking-normal flex justify-center items-center gap-1">
-              <AiOutlineEye className="text-xl" />
-              <span>Hide Balance</span>
-            </div>
-          </div>
-        </div>
-        <div className="w-[100%] bg-sky-600 text-white p-4 flex flex-col gap-4 justify-center items-center">
-          <div className="flex w-full justify-between items-center">
-            <p className="uppercase font-semibold">John Doe</p>
-            <div className="text-xs flex justify-center items-center gap-1">
-              <div className="p-1 bg-green-500 rounded-full"></div>
-              <p>Active</p>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <h5 className="text-gray-200 opacity-70">SAVINGS ACCT</h5>
-            <div>NGN2,002,023.28</div>
-          </div>
-          <div className="flex w-full justify-between items-center">
-            <p className="text-xs py-1 px-3 rounded-xl bg-sky-400">
-              2236681052
-            </p>
-            <div className="text-xs tracking-normal flex justify-center items-center gap-1">
-              <AiOutlineEyeInvisible className="text-xl" />
-              <span>Show Balance</span>
-            </div>
-            <div className="hidden text-xs tracking-normal flex justify-center items-center gap-1">
-              <AiOutlineEye className="text-xl" />
-              <span>Hide Balance</span>
-            </div>
-          </div>
-        </div>
 
-        <div className="w-[100%] flex flex-col justify-center items-center tracking-normal">
-          <div className="flex w-full justify-between items-center  py-4 px-2 bg-white shadow-xl">
-            <p className="capitalize font-semibold">recent transactions</p>
-            <p className="capitalize text-xs text-red-500">
-              view transaction history
-            </p>
-          </div>
-          <div className="flex w-full justify-between items-center py-4 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-4 px-2 bg-white">
-            <Alert />
-          </div>
-          <div className="flex w-full justify-between items-center py-4 px-2 bg-white">
-            <Alert />
-          </div>
-        </div>
-
-        <div className="w-[100%] bg-white p-4 flex flex-col gap-4 justify-center items-center shadow-md">
-          <div className="flex w-full justify-between items-center">
-            <p className="capitalize font-semibold">my favourites</p>
-            <p className="text-xs text-red-500">Add Favourites</p>
-          </div>
-          <div className="flex flex-col justify-center gap-2 items-center text-gray-400">
-            <div className="pt-6 text-5xl">
-              <MdOutlineFavoriteBorder />
+          <div className="w-[100%] bg-white p-4 flex flex-col gap-4 justify-center items-center shadow-md">
+            <div className="flex w-full justify-between items-center">
+              <p className="capitalize font-semibold">my favourites</p>
+              <p className="text-xs text-red-500">Add Favourites</p>
             </div>
-            <p className="pb-4">Oops! You don't have any favourites yet</p>
+            <div className="flex flex-col justify-center gap-2 items-center text-gray-400">
+              <div className="pt-6 text-5xl">
+                <MdOutlineFavoriteBorder />
+              </div>
+              <p className="pb-4">Oops! You don't have any favourites yet</p>
+            </div>
           </div>
         </div>
       </div>
